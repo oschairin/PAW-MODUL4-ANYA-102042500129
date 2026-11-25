@@ -16,7 +16,7 @@
         <div class="card shadow-sm">
             <div class="card-body p-4">
                 {{-- TODO 8: Tambahkan atribut enctype="multipart/form-data" pada form di bawah ini --}}
-                <form action="{{ route('buku.update', $buku->id) }}" method="POST">
+                <form action="{{ route('buku.update', $buku->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
 

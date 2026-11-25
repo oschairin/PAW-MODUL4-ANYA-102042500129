@@ -64,7 +64,11 @@
                     </div>
 
                     {{-- TODO 7: Tambahkan field input file untuk upload sampul buku dan wadah pratinjau (preview) gambar --}}
-
+                    <div class="mt-3">
+                            <img id="imagePreview" src="#" alt="Pratinjau Sampul" class="img-thumbnail d-none" style="max-height: 180px; max-width: 140px; object-fit: cover;">
+                        </div>
+                    </div>
+                    
                     <div class="d-flex justify-content-end gap-2">
                         <a href="{{ route('buku.index') }}" class="btn btn-light border px-4">Batal</a>
                         <button type="submit" class="btn btn-primary px-4">
